@@ -16,7 +16,7 @@ p {
 .container {
     border: 1px solid lightcoral;
     max-width: 1400px;
-    height: 1400px;
+    min-height: 1400px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -60,6 +60,10 @@ a {
 .btn--signin {
     background-color: transparent;
     color: var(--co-black-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 @font-face {
