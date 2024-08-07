@@ -4,14 +4,63 @@
 
 body {
     margin: 0;
-    font-family:Lato-Thin, Lato-Light, Lato-Regular, Lato-Bold, Lato-Black;
+    font-family: Lato-Thin, Lato-Light, Lato-Regular, Lato-Bold, Lato-Black;
+    background-color: var(--co-white);
 }
 
 p {
     font-size: 16px;
-    font-family:Lato-Regular;
+    font-family: Lato-Regular;
 }
 
+.container {
+    border: 1px solid lightcoral;
+    max-width: 1400px;
+    height: 1400px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 81px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    font-family: Lato-Regular;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 185px;
+    height: 50px;
+    background-color: var(--co-green);
+    color: var(--co-white);
+    font-size: 20px;
+    font-family: Lato-Regular;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    outline: 2px solid var(--co-dark-green);
+    cursor: pointer;
+}
+
+.btn--signin {
+    background-color: transparent;
+    color: var(--co-black-2);
+}
 
 @font-face {
     font-family: Lato-Thin;

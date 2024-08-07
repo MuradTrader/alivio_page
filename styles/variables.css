@@ -1,0 +1,10 @@
+:root {
+    --co-white:#fff;
+    --co-green:#007f5a;
+    --co-dark-green:#245852;
+    --co-black:#292929;
+    --co-black-2:#000000;
+    --co-text-grey:#424242;
+}
+
+/* media breakpoints: 992px, 768px, 576px, 480px */
