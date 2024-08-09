@@ -16,7 +16,7 @@ p {
 .container {
     border: 1px solid lightcoral;
     max-width: 1400px;
-    /* min-height: 1400px; */
+    min-height: 1400px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -43,11 +43,11 @@ a {
     border: none;
     border-radius: 5px;
     outline: none;
-    max-width: 185px;
+    width: 185px;
     height: 50px;
     background-color: var(--co-green);
     color: var(--co-white);
-    font-size: 20px;
+    font-size: 18px;
     font-family: Lato-Regular;
     transition: scale .23s, background-color .11s;
     cursor: pointer;

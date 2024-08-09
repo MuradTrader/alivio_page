@@ -3,7 +3,7 @@
     max-width: 1920px;
     height: 85px;
     border: 1px dashed lightcoral;
-    
+
 }
 
 .header__wrapper {
@@ -57,7 +57,7 @@
     right: 0;
 }
 
-.header__nav-link:focus-visible{
+.header__nav-link:focus-visible {
     outline: 2px solid var(--co-dark-green);
 }
 
@@ -69,22 +69,26 @@
     column-gap: 10px;
 }
 
+.btn--start {
+    width: 100%;
+    max-width: 183px;
+}
+
+
 @media (max-width: 992px) {
     .header__nav-link {
         font-size: 16px;
     }
 
     .btn {
-        width: 120px;
         font-size: 16px;
     }
 
 }
 
 @media (max-width: 768px) {
-      .header__nav {
+    .header__nav {
         display: none;
-      }
+    }
 
 }
-

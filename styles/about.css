@@ -1,7 +1,7 @@
 .about {
     border: 2px dashed lightseagreen;
-    /* min-height: 1600PX; */
     margin: 170px auto 0;
+    background-color: var(--co-white);
 }
 
 /* 
