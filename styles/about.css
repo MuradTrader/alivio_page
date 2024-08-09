@@ -1,0 +1,242 @@
+.about {
+    border: 2px dashed lightseagreen;
+    /* min-height: 1600PX; */
+    margin: 170px auto 0;
+}
+
+/* 
+.about__subtitle {
+    font-size: 24px;
+    font-family: Lato-Light;
+    color: var(--co-text-grey);
+    margin: 0 0 0 10px;
+} */
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 25px 0 0 0;
+}
+
+.about__title {
+    /* display: inline-block; */
+    max-width: 500px;
+    font-family: Lato-Bold;
+    font-size: 50px;
+    color: var(--co-green);
+    margin: 0 0 0 10px;
+    position: relative;
+}
+
+.about__title::before {
+    content: "How it works";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 24px;
+    font-family: Lato-Light;
+    color: var(--co-text-grey);
+}
+
+.about__desc {
+    /* display: inline-block; */
+    max-width: 650px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    margin: 15px 10px 0 0;
+
+}
+
+.about__cards {
+    max-width: 1400px;
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    position: relative;
+}
+
+.about__cards .card:nth-child(2) {
+    margin: 300px 0 0 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 55px;
+    max-width: 400px;
+    height: 930px;
+    border: 1px dashed blue;
+    margin: 0;
+}
+
+
+/*Через этих свойств можно позиционировать вторую карту (card--second)
+я убрал эти свойства потому что вторая карта ломалось при адапатации на моб версию.
+/* .card--second {
+    position: absolute;
+    left: 490px;
+    top: 330px;
+    margin: 0;
+    height: 850px;
+} */
+
+.card--third {
+    margin: 50px 0 0 0;
+    height: 850px;
+}
+
+.card__title {
+    font-family: Lato-Bold;
+    font-size: 30px;
+    color: var(--co-black-2);
+    align-self: center;
+    position: relative;
+}
+
+.card__title::before {
+    content: "01";
+    position: absolute;
+    top: -120px;
+    left: -110px;
+    font-size: 150px;
+    font-family: Lato-Light;
+    color: var(--co-green);
+    opacity: .2;
+}
+
+.card__desc {
+    max-width: 355px;
+    font-family: Lato-Regular;
+    font-size: 19px;
+    margin: 0;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    aspect-ratio: auto 65/82;
+}
+
+.card__title--second::before {
+    content: "02";
+    left: -100px;
+}
+
+.card__title--right {
+    align-self: end;
+}
+
+.card__title--third::before {
+    content: "03";
+    left: -130px;
+}
+
+.card__desc--second {
+    max-width: 392px;
+
+}
+
+.card__desc--third {
+    max-width: 440px;
+}
+
+@media (max-width: 1250px) {
+
+    /* .about__subtitle {
+        max-width: 600px;
+        text-align: center;
+    } */
+
+    .about {
+        margin: 80px 0 0 0;
+    }
+
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about__cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .about__cards .card:nth-child(2) {
+        margin: 0;
+    }
+
+    .card--third {
+        margin: 0;
+    }
+
+    .about__desc {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__content {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .about__title {
+        font-size: 35px;
+        text-align: start;
+        margin: 0;
+    }
+
+    .about__desc {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    .about {
+        margin: 50px 0 0 0;
+    }
+
+    .about__cards {
+        margin: 30px 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__title {
+        font-size: 22px;
+    }
+
+    .card__title::before {
+        left: -90px;
+    }
+
+    .card__desc {
+        font-size: 16px;
+    }
+
+    .card__title--second {
+        align-self: center;
+    }
+
+    .card__title--second::before {
+        left: -50px;
+    }
+
+    .card {
+        height: 780px;
+    }
+
+    .about {
+        margin: 50px 0 0 0;
+    }
+}

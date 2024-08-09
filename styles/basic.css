@@ -16,7 +16,7 @@ p {
 .container {
     border: 1px solid lightcoral;
     max-width: 1400px;
-    min-height: 1400px;
+    /* min-height: 1400px; */
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -43,18 +43,19 @@ a {
     border: none;
     border-radius: 5px;
     outline: none;
-    width: 185px;
+    max-width: 185px;
     height: 50px;
     background-color: var(--co-green);
     color: var(--co-white);
     font-size: 20px;
     font-family: Lato-Regular;
+    transition: scale .23s, background-color .11s;
+    cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus-visible {
-    outline: 2px solid var(--co-dark-green);
-    cursor: pointer;
+.btn:hover {
+    background-color: rgb(231, 127, 0);
+    scale: .95;
 }
 
 .btn--signin {
@@ -62,7 +63,12 @@ a {
     color: var(--co-black-2);
 }
 
-h1, h2, h3, h4, h5, h6 {
+.btn--signin:hover,
+.btn--signin:focus-visible {
+    outline: 2px solid var(--co-dark-green);
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
     margin: 0;
 }
 
