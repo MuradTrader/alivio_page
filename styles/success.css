@@ -1,7 +1,7 @@
 .success {
     background-color: var(--co-dark-green);
     max-width: 1920px;
-    /* height: 920px; */
+    height: 920px;
 
 }
 
@@ -80,7 +80,7 @@
 @media (max-width: 1370px) {
     .success__wrapper {
         justify-content: center;
-        margin: 120px auto;
+        margin: 70px auto;
     }
 
     .success__content-video {
